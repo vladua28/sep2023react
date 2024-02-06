@@ -1,7 +1,9 @@
+import {Flights} from "./components/Flights/Flights";
+
 const App = () => {
     return (
         <div>
-            App
+            <Flights/>
         </div>
     );
 };
