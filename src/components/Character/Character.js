@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Character.module.css';
 
-const Character = ({id, name, status, species, gender, src}) => {
+const Character = ({character}) => {
+    let {id, name, status, species, gender, src} = character;
     return (
         <div className={styles.character}>
             <img className={styles.image} src={src} alt={name}/>
