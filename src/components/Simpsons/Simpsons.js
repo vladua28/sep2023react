@@ -4,7 +4,7 @@ import {Simpson} from "../Simpson/Simpson";
 const Simpsons = () => {
     return (
         <div>
-            {simpsons.map(simpson => (<Simpson simpson={simpson}/>))}
+            {simpsons.map((simpson, index) => (<Simpson key={index} simpson={simpson}/>))}
         </div>
     );
 };
